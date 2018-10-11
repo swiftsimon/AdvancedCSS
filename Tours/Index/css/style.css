@@ -20,5 +20,17 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: #777;
+    padding: 30px;
+}
+
+.header {
+    height: 90vh;
+    background-image: linear-gradient(to right bottom, 
+        rgba(126, 213, 111, 0.808), 
+        rgba(39, 179, 133, 0.801)), 
+        url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    
 }
 
