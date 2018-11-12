@@ -1,0 +1,22 @@
+{
+  "name": "further_afield",
+  "version": "1.0.0",
+  "description": "travel like a local",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swiftsimon/AdvancedCSS.git"
+  },
+  "author": "simon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swiftsimon/AdvancedCSS/issues"
+  },
+  "homepage": "https://github.com/swiftsimon/AdvancedCSS#readme",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
