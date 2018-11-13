@@ -4,7 +4,7 @@
   "description": "travel like a local",
   "main": "index.js",
   "scripts": {
-    "test": "start"
+    "compile:sass": "node-sass sass/main.scss FurtherAfield/index/css/style.css"
   },
   "repository": {
     "type": "git",
