@@ -2,6 +2,8 @@ $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
+$color-grey-dark: #777;
+
 //Basic Reset
 *,
 *::after,
@@ -20,7 +22,7 @@ body {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.7;
-    color: #777;
+    color: $color-grey-dark;
     padding: 3rem;
 
     box-sizing: border-box;
@@ -154,7 +156,7 @@ body {
 }
 
 .btn--white {
-    color: #777;
+    color: $color-grey-dark;
     background-color: #fff;
 }
 
