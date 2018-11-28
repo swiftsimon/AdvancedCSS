@@ -4,6 +4,8 @@ $color-primary-dark: #28b485;
 
 $color-grey-dark: #777;
 $color-black: #000;
+$color-white: red;
+$color-black-faded: rgba(0,0,0,.2);
 
 //Basic Reset
 *,
@@ -40,30 +42,29 @@ body {
     background-position: top;
     position: relative;
 
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)
 
     &__logo-box {
         position: absolute;
         top: 4rem;
         left: 4rem;
     }
-    
+
     &__logo {
         height: 3.5rem;
     }
-    
+
     &__center-text-box {
         position: absolute;
         top: 40vh;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-    }
-    
+    }    
 }
 
 .header-primary {
-    color: #fff;
+    color: $color-white;
     text-transform: uppercase;
 
     backface-visibility: inherit;
@@ -74,16 +75,15 @@ body {
         font-size: 5rem;
         font-weight: 400;
         letter-spacing: 1.5rem;
-    
+
         animation: inFromLeft 1.5s;
     }
-    
+
     &--sub {
         display: block;
         font-size: 2rem;
         font-weight: 400;
         letter-spacing: 2.15rem;
-    
         animation: inFromRight 1.5s;
     }
 }
@@ -141,35 +141,23 @@ body {
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
-    
     }
-    
+
     &:hover {
         transform: translateY(-.3rem);
-        box-shadow: 0 1rem 2rem rgba($color-black,.2);
-
-        &::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        
-        }
+        box-shadow: 0 1rem 2rem $color-black-faded;
     }
-    
+
     &:active {
         transform: translateY(-.1rem);
-        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
-        
+        box-shadow: 0 .5rem 1rem $color-black-faded;
     }
-    
+
     &--white {
         color: $color-grey-dark;
-        background-color: #fff;
-
-        &::after {
-            background-color: #fff;
-        }
+        background-color: $color-white;
     }
-    
+
     &::after {
         content: "";
         display: inline-block;
@@ -181,9 +169,17 @@ body {
         left: 0;
         z-index: -1;
         transition: all .4s;
-    
     }
-    
+
+    &--white::after {
+        background-color: $color-white;
+    }
+
+    &:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+
     &--animated {
         animation: inFromBottom .5s ease-out 1s;
         animation-fill-mode: backwards; 
