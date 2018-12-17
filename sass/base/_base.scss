@@ -1,0 +1,17 @@
+//Basic Reset
+*,
+*::after,
+*::before {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: inherit;
+}
+
+html {
+    // Defines the value of 1 rem
+    font-size: 56.25%;
+}
+
+body {
+    box-sizing: border-box;
+}
